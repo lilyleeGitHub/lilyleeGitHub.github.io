@@ -88,7 +88,14 @@
   <div class="clr"></div>
 
   <footer id="main-footer">
-    <p>Lily' s page &copy; 2019, All RIghts Reserved</p>
+    <!--<p>Lily' s page &copy; 2019, All RIghts Reserved</p>-->
+    <p>Lily' s page &copy; <span id="year"></span>, All RIghts Reserved</p>
+
+
+   
+  <script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
     
     <div class="footer-social"><span>
       <a class="icon is-size-4" href="https://www.facebook.com/" title="Lily on Facebook">
